@@ -31,26 +31,46 @@ Welcome to my personal portfolio! This site showcases my journey in software dev
 
 ## 📂 Project Structure
 
-julie-portfolio/
-├── dist/                        # Compiled output files
-│   └── output.css              # Tailwind CSS output
-│
-├── images/                     # All images (profile, projects, backgrounds, icons)
-│   └── your-image-files-here
-│
-├── node_modules/               # Node dependencies (auto-generated)
-│
-├── src/                        # Source styles (custom CSS before compilation)
-│   ├── styles.css              # Main style file with Tailwind @apply or custom rules
-│   └── projects.css            # Extra styling for project-specific components
-│
-├── index.html                  # Home / About page
-├── projects.html               # Projects listing page
-├── contact.html                # Contact form and social links
-│
-├── tailwind.config.js          # Tailwind CSS configuration
-├── postcss.config.js           # PostCSS setup (for Tailwind build)
-├── package.json                # Project metadata and scripts
-├── package-lock.json           # Exact dependency versions
-│             
-└── README.md                   # Project overview, setup, and links 💜
+## 🛠 Setup Instructions
+
+To run this project locally on your machine:
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/julietjaoko/julie-portfolio.git
+
+Navigate to the Project Folder
+
+bash
+Copy code
+cd julie-portfolio
+Open in a Code Editor
+
+If you're using VS Code:
+
+bash
+Copy code
+code .
+Launch the Site
+
+You can open the index.html file in your browser manually, or install a live server:
+
+bash
+Copy code
+# If you have Node.js installed
+npm install -g live-server
+live-server
+Or just right-click index.html and choose "Open with Live Server" in VS Code.
+
+💡 No frameworks or build tools are required. Just open the HTML files and you're good to go!
+
+yaml
+Copy code
+
+---
+
+### Optional Bonus: Add This to the Top
+
+```markdown
+> 💻 **This project is fully static** and runs in any modern browser.
