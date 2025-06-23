@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Julie.dev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/projects.css" >
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-purple-50 text-gray-800 font-[Poppins]">
+
+  <!-- Navigation -->
+  <header class="bg-purple-200 shadow-md fixed w-full z-50 top-0 left-0">
+    <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between" aria-label="Main Navigation">
+      <h1 class="text-xl font-semibold text-purple-800">Julie.dev</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="about.html" class="text-gray-700 hover:text-purple-700 transition font-medium">Home</a></li>
+        <li><a href="projects.html" class="text-purple-800 font-semibold underline underline-offset-4">Projects</a></li>
+        <li><a href="contact.html" class="text-gray-700 hover:text-purple-700 transition font-medium">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-24 grid gap-12 md:grid-cols-2">
+
+    <!-- Python Journal App Flip Card -->
+    <div class="card w-full h-80 shadow-md hover:shadow-xl transition rounded-lg">
+      <div class="card-inner">
+
+        <!-- Front -->
+        <div class="card-front bg-white">
+          <img src="images/python_project.png" alt="Python Journal App" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 w-full bg-purple-700 bg-opacity-80 text-white p-4 font-semibold text-lg">
+            Personal Journal App
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-back bg-purple-100 p-6 text-gray-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-semibold text-purple-800 mb-2">Personal Journal App</h3>
+            <p class="text-sm">Python console-based journal app with gratitude and voice note entries, mood statistics, quotes and goal setting. It is implemented using OOP logic and makes use of the many Python libaries.</p>
+            <div class="flex flex-wrap gap-2 mt-3 text-sm">
+              <span class="bg-purple-200 text-purple-800 px-2 py-1 rounded">Python</span>
+              <span class="bg-purple-200 text-purple-800 px-2 py-1 rounded">OOP</span>
+            </div>
+          </div>
+          <div class="mt-4 space-x-3">
+            <a href="https://github.com/julietjaoko/personal-journal-app" target="_blank" class="text-purple-700 underline font-medium">View Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Portfolio Website Flip Card -->
+    <div class="card w-full h-80 shadow-md hover:shadow-xl transition rounded-lg">
+      <div class="card-inner">
+
+        <!-- Front -->
+        <div class="card-front bg-white">
+          <img src="images/portfolio_preview.png" alt="Portfolio Preview" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 w-full bg-purple-700 bg-opacity-80 text-white p-4 font-semibold text-lg">
+            Portfolio Website
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-back bg-purple-100 p-6 text-gray-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-semibold text-purple-800 mb-2">Responsive Portfolio</h3>
+            <p class="text-sm">Modern responsive portfolio website built with Tailwind CSS, transitions, animations, semantic HTML and light purple theme.</p>
+            <div class="flex flex-wrap gap-2 mt-3 text-sm">
+              <span class="bg-purple-200 text-purple-800 px-2 py-1 rounded">HTML</span>
+              <span class="bg-purple-200 text-purple-800 px-2 py-1 rounded">Tailwind CSS</span>
+              <span class="bg-purple-200 text-purple-800 px-2 py-1 rounded">Responsive</span>
+            </div>
+          </div>
+          <div class="mt-4 space-x-3">
+            <a href="https://github.com/yourusername/portfolio-site" target="_blank" class="text-purple-700 underline font-medium">View Code</a>
+            <a href="https://your-netlify-url.netlify.app" target="_blank" class="bg-purple-600 text-white px-3 py-1 rounded hover:bg-purple-700 transition">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-purple-100 mt-12 py-6 border-t border-purple-200">
+    <div class="max-w-6xl mx-auto flex justify-center space-x-8">
+      <!-- GitHub -->
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-6 h-6 hover:scale-110 transition" alt="GitHub" />
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="w-6 h-6 hover:scale-110 transition" alt="LinkedIn" />
+      </a>
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@yourhandle" target="_blank" aria-label="TikTok">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-6 h-6 fill-current text-gray-700 hover:scale-110 transition">
+          <path d="M41,16.5c-3.8,0-7-2.4-8.3-5.8V30c0,5.7-4.6,10.3-10.3,10.3S12,35.7,12,30c0-5.3,4.1-9.6,9.3-10.2V24
+            c-2.2,0.5-3.9,2.5-3.9,4.9c0,2.8,2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1V6.4h6.3c1.1,5.1,5.6,9,11.1,9.1V16.5z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+<script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+  });
+
+  fadeElements.forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>

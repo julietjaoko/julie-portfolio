@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Julie.dev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-purple-100 text-gray-800 font-[Poppins]">
+
+  <!--Navigation Menu-->
+  <header class="bg-purple-200 shadow-md fixed w-full z-50 top-0 left-0">
+    <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between" aria-label="Main Navigation">
+        <h1 class="text-xl font-semibold text-purple-800">Julie.dev</h1>
+        <ul class="hidden md:flex space-x-6">
+        <li><a href="about.html" class="text-gray-700 hover:text-purple-700 transition font-medium">Home</a></li>
+        <li><a href="projects.html" class="text-gray-700 hover:text-purple-700 transition font-medium">Projects</a></li>
+        <li><a href="contact.html" class="text-purple-800 font-semibold underline underline-offset-4">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <!-- Contact Section -->
+  <main class="py-24 px-6 fade-in">
+     <!-- Curved Banner -->
+    <section class="relative">
+      <div class="bg-purple-300 h-48 flex justify-center items-center">
+        <h2 class="text-4xl font-bold text-white">Let’s Connect</h2>
+      </div>
+      <svg class="absolute bottom-0 w-full" viewBox="0 0 1440 100">
+        <path fill="#f3e8ff" fill-opacity="1" d="M0,0L80,13.3C160,27,320,53,480,69.3C640,85,800,91,960,80C1120,69,1280,43,1360,29.3L1440,16V100H0Z"></path>
+      </svg>
+    </section>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+      <!-- Contact Info Panel -->
+      <section class="bg-white rounded-xl p-8 shadow-md">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-6">Connect With Me</h2>
+        <p class="text-gray-700 mb-4">I’d love to hear from you! Let’s collaborate or just talk tech.</p>
+        <!-- Social Icons Row -->
+        <div class="flex items-center space-x-6 mt-4">
+            <!-- GitHub -->
+            <a href="https://github.com/julietjaoko" target="_blank" aria-label="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-8 h-8 hover:scale-110 transition">
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/juliet-jaoko-3a5912142" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition">
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@jaoko.o" target="_blank" aria-label="TikTok">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-8 h-8 fill-current text-gray-700 hover:scale-110 transition">
+                <path d="M41,16.5c-3.8,0-7-2.4-8.3-5.8V30c0,5.7-4.6,10.3-10.3,10.3S12,35.7,12,30c0-5.3,4.1-9.6,9.3-10.2V24
+                    c-2.2,0.5-3.9,2.5-3.9,4.9c0,2.8,2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1V6.4h6.3c1.1,5.1,5.6,9,11.1,9.1V16.5z"/>
+                </svg>
+            </a>
+        </div>
+      </section>
+      
+
+
+      <!-- Contact Form Card -->
+      <section class="bg-white rounded-xl p-8 shadow-md">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-6">Send a Message</h2>
+        <form action="#" method="POST" class="space-y-5">
+          <div>
+            <label for="name" class="block mb-1 text-gray-600">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" class="w-full p-3 rounded border border-purple-300 focus:ring-2 focus:ring-purple-500 outline-none">
+          </div>
+          <div>
+            <label for="email" class="block mb-1 text-gray-600">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required class="w-full p-3 rounded border border-purple-300 focus:ring-2 focus:ring-purple-500 outline-none">
+          </div>
+          <div>
+            <label for="message" class="block mb-1 text-gray-600">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How did you find my portfolio?" required class="w-full p-3 rounded border border-purple-300 focus:ring-2 focus:ring-purple-500 outline-none"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 bg-purple-500 hover:bg-purple-600 rounded text-white transition">Send</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // Fade-in scroll animation
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
