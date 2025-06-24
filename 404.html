@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-purple-100 text-purple-800 flex items-center justify-center min-h-screen px-6 py-12">
+
+  <main class="text-center space-y-6 max-w-xl">
+
+    <!-- SVG Illustration -->
+    <div class="w-64 mx-auto">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="80" fill="#E9D5FF"/>
+        
+        <!-- Code lines (moved upward) -->
+        <path d="M70 70h60M70 90h60M70 110h40" stroke="#6B21A8" stroke-width="5" stroke-linecap="round"/>
+        
+        <!-- Circular border -->
+        <circle cx="100" cy="100" r="78" stroke="#C4B5FD" stroke-width="4"/>
+        
+        <!-- Label moved down -->
+        <text x="50%" y="135" text-anchor="middle" fill="#6B21A8" font-size="18" font-family="monospace">Lost in Code</text>
+    </svg>
+    </div>
+
+
+    <!-- 404 Content -->
+    <h1 class="text-6xl font-extrabold text-purple-500 animate-bounce">404</h1>
+    <h2 class="text-2xl font-semibold">Oops! This page wandered off.</h2>
+    <p class="text-purple-600 max-w-md mx-auto">
+      The page you’re looking for doesn’t exist, or might’ve been moved. Let’s take you back home where the code’s clean and the UI is sleek.
+    </p>
+    <a href="index.html" class="mt-4 inline-block px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">
+      ⬅️ Go Home
+    </a>
+  </main>
+
+</body>
+</html>
+

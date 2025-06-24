@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Juliet Jaoko's software development portfolio. Showcasing projects in Python, web design, and UI development." />
     <meta name="author" content="Juliet Jaoko" />
     <meta name="keywords" content="Juliet Jaoko, portfolio, web developer, Python, Tailwind CSS, frontend developer" />
@@ -14,12 +14,11 @@
     <meta property="og:url" content="https://juliet-portfolio.netlify.app/">
     <meta name="twitter:card" content="summary_large_image" />
     
-    <title>Projects | Juliet.dev</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/projects.css" >
-    <link rel="icon" type="image/png" href="images/logo.png" />
 
+    <title>Blog | Juliet.dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
   </head>
   <body class="bg-purple-50 text-gray-800 font-[Poppins]">
     <!-- Loading Spinner -->
@@ -27,11 +26,12 @@
       <div class="animate-spin rounded-full h-16 w-16 border-4 border-purple-400 border-t-transparent"></div>
     </div>
 
+    <!-- Header -->
     <header class="bg-purple-100 sticky top-0 z-50 shadow-md">
       <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
 
         <!-- Logo / Title -->
-        <div class="text-2xl font-bold text-purple-800">Juliet.dev</div>
+        <div class="text-2xl font-bold text-purple-800">Juliet's Blog</div>
 
         <!-- Hamburger Button -->
         <button id="menu-btn"
@@ -61,66 +61,43 @@
 
     </header>
 
+    <!-- Blog Content -->
+    <main class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">📝 Tech Notes from My Journey</h2>
 
-
-    <main class="max-w-6xl mx-auto px-6 py-24 grid gap-12 md:grid-cols-2">
-
-      <!-- Journal App Card -->
-      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300">
-        <img src="images/journal.png" alt="Python Journal App" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
-
-        <section class="p-6 text-purple-900 space-y-3">
-          <header>
-            <h3 class="text-xl font-bold">📝 Personal Journal App</h3>
-          </header>
-          <p class="text-sm">
-            Python console-based journal app with gratitude and voice note entries, mood statistics, quotes and goal setting.
-            It is implemented using OOP logic and makes use of the many Python libraries.
+      <section class="grid gap-10 bg-purple-50 py-20 px-6 text-purple-900">
+        <!-- Blog Card 1 -->
+        <article class="bg-purple-200 border border-purple-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+          <h3 class="text-xl font-semibold text-purple-900 mb-2">🎯 Lessons from Tailwind CSS</h3>
+          <p class="text-sm text-purple-700 leading-relaxed">
+            Choosing Tailwind early helped me build layout skills quickly. It trained me to be intentional with spacing, color, and responsiveness.
           </p>
-          <ul class="flex flex-wrap gap-2 text-sm" aria-label="Technologies used">
-            <li class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Python</li>
-            <li class="bg-purple-100 text-purple-800 px-2 py-1 rounded">OOP</li>
-          </ul>
-          <nav class="pt-4 flex gap-3" aria-label="External Links">
-            <a href="https://github.com/julietjaoko/personal-journal.git" target="_blank" class="text-purple-600 underline font-medium">
-              View Code
-            </a>
-          </nav>
-        </section>
-      </article>
+          <p class="mt-4 text-xs text-purple-500">Posted June 2025</p>
+        </article>
 
-      <!-- Portfolio Card -->
-      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300">
-        <img src="images/Coder.jpeg" alt="Portfolio Website" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
-
-        <section class="p-6 text-purple-900 space-y-3">
-          <header>
-            <h3 class="text-xl font-bold">🌐 Portfolio Website</h3>
-          </header>
-          <p class="text-sm">
-            A responsive personal portfolio using Tailwind CSS with semantic HTML, animations, and scroll transitions.
+        <!-- Blog Card 2 -->
+        <article class="bg-purple-200 border border-purple-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+          <h3 class="text-xl font-semibold text-purple-900 mb-2">What I Learned Building My Portfolio</h3>
+          <p class="text-sm text-purple-700 leading-relaxed">
+            Building this portfolio was more than a design challenge. It taught me the importance of semantic HTML, accessibility, responsiveness, and most importantly, discipline. Every choice — from fonts to scroll transitions — was intentional.
           </p>
-          <ul class="flex flex-wrap gap-2 text-sm" aria-label="Technologies used">
-            <li class="bg-purple-100 text-purple-800 px-2 py-1 rounded">HTML</li>
-            <li class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Tailwind CSS</li>
-            <li class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Responsive</li>
-          </ul>
-          <nav class="pt-4 flex flex-wrap gap-3" aria-label="External Links">
-            <a href="https://github.com/julietjaoko/julie-portfolio.git" target="_blank" class="text-purple-600 underline font-medium">
-              View Code
-            </a>
-            <a href="https://juliet-portfolio.netlify.app/" target="_blank" class="bg-purple-600 text-white px-3 py-1 rounded hover:bg-purple-700 transition text-sm">
-              Live Demo
-            </a>
-          </nav>
-        </section>
-      </article>
+          <p class="mt-4 text-xs text-purple-500">Posted June 2025</p>
+        </article>
 
+        <!-- Blog Card 3 -->
+        <article class="bg-purple-200 border border-purple-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+          <h3 class="text-xl font-semibold text-purple-900 mb-2">Balancing University Work With Side Projects</h3>
+          <p class="text-sm text-purple-700 leading-relaxed">
+            Managing deadlines and code experiments simultaneously taught me to work efficiently. I'm now more intentional with time, and I set weekly mini-goals that let me stay consistent without burning out.
+          </p>
+          <p class="mt-4 text-xs text-purple-500">Posted June 2025</p>
+        </article>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-purple-100 mt-12 py-6 border-t border-purple-200">
-      <div class="max-w-6xl mx-auto flex justify-center space-x-8">
+    <footer class="mt-20 bg-purple-100 py-6 text-center text-purple-700 text-sm">
+          <div class="max-w-6xl mx-auto flex justify-center space-x-8">
         <!-- GitHub -->
         <a href="https://github.com/julietjaoko" target="_blank" aria-label="GitHub">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-6 h-6 hover:scale-110 transition" alt="GitHub" />
@@ -140,18 +117,6 @@
     </footer>
 
     <script>
-      const cards = document.querySelectorAll('.fade-in');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      });
-      cards.forEach(card => observer.observe(card));
-    </script>
-
-    <script>
       const menuBtn = document.getElementById('menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
 
@@ -166,7 +131,6 @@
       });
     </script>
 
-    <!-- Scroll to Top -->
     <button id="scrollTopBtn"
       class="fixed bottom-5 right-5 p-3 bg-purple-600 text-white rounded-full shadow-md hover:bg-purple-700 transition hidden z-40">
       ⬆️
@@ -180,7 +144,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     </script>
-
 
   </body>
 </html>
