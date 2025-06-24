@@ -94,6 +94,9 @@ A Python console-based journaling tool with:
 
 This website you're on right now! A fully custom responsive portfolio designed with clean layout and subtle motion.
 
+###  Oracle Bookshop Database
+A relational database management system used to store and manage university library books between the students, suppliers and university staff. It was implemented using Oracle SQL.
+
 **Tech Used:** HTML, Tailwind CSS, GitHub, Netlify  
 🔗 [View Code](https://github.com/julietjaoko/julie-portfolio)  
 🌐 [Live Demo](https://juliet-portfolio.netlify.app/)
