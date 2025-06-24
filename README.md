@@ -32,7 +32,6 @@ Welcome to my personal portfolio! This site showcases my journey in software dev
 
 ![Homepage Screenshot](images/portfolio-website.png)
 
-## 📂 Project Structure
 
 ## 🛠 Setup Instructions
 
@@ -72,8 +71,6 @@ Or just right-click index.html and choose "Open with Live Server" in VS Code.
 
 ---
 
-### Optional Bonus: Add This to the Top
-
 ```markdown
 > 💻 **This project is fully static** and runs in any modern browser.
 ```
@@ -85,10 +82,10 @@ Or just right-click index.html and choose "Open with Live Server" in VS Code.
 A Python console-based journaling tool with:
 - ✍️ Daily notes
 - 😄 Mood tracking
-- 📊 PrettyTable display
+- 📊 Stats display
 - 💬 Motivational quotes
 
-**Tech Used:** Python, OOP, PrettyTable  
+**Tech Used:** Python, OOP
 🔗 [View Code](https://github.com/julietjaoko/personal-journal)
 
 ---
