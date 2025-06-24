@@ -51,21 +51,21 @@ cd julie-portfolio
 ```
 3. **Open in a Code Editor**
 
-    If you're using VS Code:
+If you're using VS Code:
 
 ```bash
 code .
 ```
 4. **Launch the Site**
 
-    You can open the index.html file in your browser manually, or install a live server:
+You can open the index.html file in your browser manually, or install a live server:
 
 ```bash
 # If you have Node.js installed
 npm install -g live-server
 live-server
 ```
-    Or just right-click index.html and choose "Open with Live Server" in VS Code.
+Or just right-click index.html and choose "Open with Live Server" in VS Code.
 
 💡 No frameworks or build tools are required. Just open the HTML files and you're good to go!
 
