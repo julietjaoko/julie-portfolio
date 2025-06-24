@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This site showcases my journey in software development, including my projects, skills, and contact details — all styled with Tailwind CSS and built with love and curiosity 💻💜
 
 ## 🌐 Live Demo  
-[🔗 View Portfolio](https://your-netlify-or-github-pages-url.netlify.app)
+[🔗 View Portfolio](https://juliet-portfolio.netlify.app/)
 
 ---
 
@@ -28,6 +28,9 @@ Welcome to my personal portfolio! This site showcases my journey in software dev
 | JavaScript       | Responsive Web Design   |
 
 ---
+## 📸 Preview
+
+![Homepage Screenshot](images/portfolio-website.png)
 
 ## 📂 Project Structure
 
@@ -39,34 +42,33 @@ To run this project locally on your machine:
 
 ```bash
 git clone https://github.com/julietjaoko/julie-portfolio.git
+```
 
-Navigate to the Project Folder
+2. **Navigate to the Project Folder**
 
-bash
-Copy code
+```bash
 cd julie-portfolio
-Open in a Code Editor
+```
+3. **Open in a Code Editor**
 
-If you're using VS Code:
+    If you're using VS Code:
 
-bash
-Copy code
+```bash
 code .
-Launch the Site
+```
+4. **Launch the Site**
 
-You can open the index.html file in your browser manually, or install a live server:
+    You can open the index.html file in your browser manually, or install a live server:
 
-bash
-Copy code
+```bash
 # If you have Node.js installed
 npm install -g live-server
 live-server
-Or just right-click index.html and choose "Open with Live Server" in VS Code.
+```
+    Or just right-click index.html and choose "Open with Live Server" in VS Code.
 
 💡 No frameworks or build tools are required. Just open the HTML files and you're good to go!
 
-yaml
-Copy code
 
 ---
 
@@ -74,3 +76,39 @@ Copy code
 
 ```markdown
 > 💻 **This project is fully static** and runs in any modern browser.
+```
+
+## 🧠 Projects Highlight
+
+### 📓 Personal Journal App
+
+A Python console-based journaling tool with:
+- ✍️ Daily notes
+- 😄 Mood tracking
+- 📊 PrettyTable display
+- 💬 Motivational quotes
+
+**Tech Used:** Python, OOP, PrettyTable  
+🔗 [View Code](https://github.com/julietjaoko/personal-journal)
+
+---
+
+### 🖼️ Responsive Portfolio Website
+
+This website you're on right now! A fully custom responsive portfolio designed with clean layout and subtle motion.
+
+**Tech Used:** HTML, Tailwind CSS, GitHub, Netlify  
+🔗 [View Code](https://github.com/julietjaoko/julie-portfolio)  
+🌐 [Live Demo](https://juliet-portfolio.netlify.app/)
+
+---
+
+
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+Feel free to use, modify, and share — just don’t forget to credit! 😊
+
+[Read the full license](LICENSE)
