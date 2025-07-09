@@ -1,4 +1,4 @@
-# 👩‍💻 Julie's Portfolio Website
+# 👩‍💻 Juliet's Portfolio Website
 
 Welcome to my personal portfolio! This site showcases my journey in software development, including my projects, skills, and contact details — all styled with Tailwind CSS and built with love and curiosity 💻💜
 
